@@ -1,0 +1,276 @@
+/*style.css*/
+body{
+ 	background-color: #c38c80;
+ 	font-family: 'Baloo Paaji', cursive;
+}
+
+
+h1,h2{
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
+.summary{
+	text-align: center;
+	background-color: #f7ea48;
+	border-radius: 20px;
+}
+.preamble,.explanation,.participation,.benefits,.requirements{
+	border-radius: 10px;
+}
+.preamble{
+	background-color: #e03e52;
+	background-size: 10%;
+}
+
+.explanation{
+	background-color: #97c8d6;
+}
+
+.participation{
+	background-color: #c0df16;
+}
+
+.benefits{
+	background-color: #f5c265;
+}
+
+.requirements{
+	background-color: pink;
+}
+
+
+
+.sidebar h3{
+	margin-top: 0px;
+	text-align: left;	
+	font-size: 40px;
+}
+
+
+
+footer{
+	font-size: 20px;
+	background-color: yellow;
+	border-radius: 10px;
+	margin-right: 260px;
+}
+
+.design-selection{
+	background-color: #77cdd5;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.design-archives{
+	background-color: #6cc24a;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.zen-resources{
+	background-color: #f3b15a;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+
+@media (min-width: 600px){
+	/*window*/
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+
+ 
+body{
+  	font-family: 'Baloo Paaji', cursive;
+	align-items: center;
+}
+
+
+
+h1, h2{
+  font-size: 75px;
+  text-transform: uppercase;
+
+    width: 100%;
+    color: $tertiary-color;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-timing-function:ease;
+    animation-duration: 3s;
+}
+
+h1{
+	font-size: 100px;
+	text-align: center;
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+
+  &:first-child{
+    animation-delay: 0.7s;
+
+  }
+
+  &:last-child{
+    color: $secondary-color;
+    animation-delay: 0.5s;
+  }
+}
+
+h2{ 
+	font-size: 100px;
+  text-align: center;
+  span{
+    animation-delay: 4.1s;
+    -webkit-animation-fill-mode: forwards;
+
+    &:first-child{
+      animation-delay: 4.2s;
+
+    }
+
+    &:last-child{
+      color: $secondary-color;
+      animation-delay: 4s;
+    }
+  }
+}
+
+.usechrome{
+  font-size: 10px;
+  color: #fff;
+  font-family: helvetica, arial;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+@keyframes titleAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+      transform: translateY(0);
+      opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+       transform: translateY(0);
+       opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+       transform: translateY(50px);
+       opacity: 0;
+      -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+      clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    
+  }
+}
+
+	header{
+	color: black;
+}
+
+p,ul{
+	font-size: 25px;
+	font-style: oblique;
+	padding-left: 10px;
+}
+
+h3{
+	text-align: center;	
+	font-size: 40px;
+	margin-bottom: -15px;
+}
+
+footer{
+	font-size: 20px;
+	background-color: yellow;
+	margin-right: 1660px;
+}
+
+aside{
+	margin-left: 20px;
+	background-color: ;
+}
+
+a{
+	font-weight: bold;
+}
+.summary{
+	text-align: center;
+	background-color: #f7ea48;
+}
+
+.preamble{
+	float: right;
+	margin-top: 20px;
+	border-radius: 20px;
+	width: 500px;
+	background-color: #e03e52;
+	margin-left: 20px;
+	padding-bottom: 80px;
+}
+
+.explanation{
+	border-radius: 20px;
+	margin-right: 500px;
+	background-color: #97c8d6;
+}
+
+.participation{
+
+	border-radius: 20px;
+	background-color: #c0df16;
+	margin-right: 500px;
+}
+
+.benefits{
+	border-radius: 20px;
+	background-color: #f5c265;
+}
+
+.requirements{
+	border-radius: 20px;
+	background-color: pink;
+}
+
+
+
+.sidebar h3{
+	text-align: left;	
+	font-size: 40px;
+}
+
+.design-selection{
+	padding-right: 200px;
+	float: left;
+	margin-right: 40px;
+}
+
+.design-archives{
+	padding-right: 200px;
+	float: left;
+	margin-right: 40px;
+}
+
+.zen-resources{
+	float: left;
+	margin-right: 40px;
+}
+
+
+}
+
